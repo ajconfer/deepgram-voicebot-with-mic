@@ -1,12 +1,10 @@
 
 import streamlit as st
 from streamlit_webrtc import webrtc_streamer, AudioProcessorBase, ClientSettings
-import numpy as np
 import av
 import os
 import tempfile
 import requests
-import io
 
 DEEPGRAM_API_KEY = os.getenv("DEEPGRAM_API_KEY")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
